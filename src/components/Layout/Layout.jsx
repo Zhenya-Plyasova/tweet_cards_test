@@ -6,7 +6,7 @@ import css from './Layout.module.css';
 export const Layout = () => {
   return (
     <div
-      className="css.main-wrapper"
+      className={css.mainWrapper}
       style={{ width: '100%', margin: '0 auto', padding: '0 16px' }}
     >
       <Navigation />
