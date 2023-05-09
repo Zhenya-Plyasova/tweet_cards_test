@@ -21,8 +21,14 @@ const Tweets = () => {
     setPage(1);
   }, []);
 
+  const lastUserIndex = users.length - 1;
+  const lastFetchedUserIndex = fetchedUsers.length - 1;
+
   useEffect(() => {
-    if (users.length>0&&users[0].id !== fetchedUsers[0].id) {
+    if (
+      users.length > 0 &&
+      users[lastUserIndex].id !== fetchedUsers[lastFetchedUserIndex].id
+    ) {
       setUsers(prevUsers => [...prevUsers, ...fetchedUsers]);
     } else {
       setUsers(fetchedUsers);
