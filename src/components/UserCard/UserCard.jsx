@@ -35,7 +35,9 @@ export const UserCard = ({ user }) => {
         <div className={css.card__infoblock}>
           <ul className={css.card__textList}>
             <li className={css.card__textItem}>{user.tweets} tweets</li>
-            <li className={css.card__textItem}>{user.followers} followers</li>
+            <li className={css.card__textItem}>
+              {user.followers.toLocaleString('en-US')} followers
+            </li>
           </ul>
           <button
             className={
