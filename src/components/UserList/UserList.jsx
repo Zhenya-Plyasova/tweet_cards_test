@@ -1,5 +1,5 @@
 // import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import css from './UserList.module.css';
 // import { fetchUsers } from '../../redux/operations';
 import { getError, getUsers, isLoading } from '../../redux/selectors';

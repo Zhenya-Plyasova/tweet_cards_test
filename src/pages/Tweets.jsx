@@ -1,17 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 // import { UserCard } from "../components/UserCard/UserCard";
 import { fetchUsers } from "../redux/operations";
 import { useEffect, useState } from "react";
 import { UserList } from "../components/UserList/UserList";
-import { getUsers } from "../redux/selectors";
+// import { getUsers } from "../redux/selectors";
 // import { getError, getUsers, isLoading } from "../../redux/selectors";
 
 const Tweets = () => {
 
-  const fetchedUsers = useSelector(getUsers);
+  // const fetchedUsers = useSelector(getUsers);
   const [page, setPage] = useState(1);
-  const [users, setUsers] = useState(fetchedUsers);
+  // const [users, setUsers] = useState(fetchedUsers);
 
 
    const dispatch = useDispatch();
