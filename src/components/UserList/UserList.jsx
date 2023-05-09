@@ -1,17 +1,12 @@
-// import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import css from './UserList.module.css';
-// import { fetchUsers } from '../../redux/operations';
 import { getError, isLoading } from '../../redux/selectors';
 import { UserCard } from '../UserCard/UserCard';
 
 export const UserList = ({ users }) => {
-    // const dispatch = useDispatch();
-    // const users = useSelector(getUsers);
+
     const loading = useSelector(isLoading);
     const error = useSelector(getError);
-
-    // useEffect(dispatch(fetchUsers));
 
     return (
       <>

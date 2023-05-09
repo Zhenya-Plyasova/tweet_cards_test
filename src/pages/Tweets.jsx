@@ -1,11 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-
-// import { UserCard } from "../components/UserCard/UserCard";
 import { fetchUsers } from "../redux/operations";
 import { useEffect, useState } from "react";
 import { UserList } from "../components/UserList/UserList";
 import { getUsers } from "../redux/selectors";
-// import { getError, getUsers, isLoading } from "../../redux/selectors";
+import { LoadMoreButton } from "components/LoadMoreButton";
+import { BackLink } from "components/BackLink";
 
 const Tweets = () => {
 
@@ -34,17 +33,13 @@ const Tweets = () => {
   
   const handleLoadMore = () => {
     setPage((prevPage) => prevPage + 1)
-    // setUsers(prevUsers=>[...prevUsers, fetchedUsers])
   }
     
     return (
       <div>
+        <BackLink type="button" />
         <UserList users={users} />
-        {page<5&&<button
-          onClick={handleLoadMore}
-        >
-          Load more
-        </button>}
+        {page<5&&<LoadMoreButton onClick={handleLoadMore} />}
       </div>
     );
 }
