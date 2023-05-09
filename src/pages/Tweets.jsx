@@ -36,10 +36,10 @@ const Tweets = () => {
   }
     
     return (
-      <div>
+      <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
         <BackLink type="button" />
         <UserList users={users} />
-        {page<5&&<LoadMoreButton onClick={handleLoadMore} />}
+        {page < 5 && <LoadMoreButton onClick={handleLoadMore} />}
       </div>
     );
 }

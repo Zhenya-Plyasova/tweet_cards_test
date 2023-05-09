@@ -21,7 +21,7 @@ const Home = () => {
           >
             Welcome to the Tweets APP!
           </h1>
-          <img src={LogoApp} alt="project logo"></img>
+          <img src={LogoApp} width="512px" height="512px" alt="project logo"></img>
         </div>
       </>
     );

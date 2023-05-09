@@ -13,7 +13,7 @@ export const UserList = ({ users }) => {
         {error && <p>{error}</p>}
         {loading && <p>Loading...</p>}
         {users.length > 0 && (
-          <div>
+          <div className={css.list__wrapper}>
             <ul className={css.card__list}>
               {users.map((user) => (
                 <li key={user.id}>

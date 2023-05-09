@@ -15,8 +15,20 @@ export const UserCard = ({ user }) => {
   return (
     <section className={css.card}>
       <div className={css.card__wrapper}>
-        <img className={css.card__logo} src={Logo} alt="logo go-it"></img>
-        <img className={css.card__picture} src={picture} alt="decoration"></img>
+        <img
+          width="76px"
+          height="22px"
+          className={css.card__logo}
+          src={Logo}
+          alt="logo go-it"
+        ></img>
+        <img
+          className={css.card__picture}
+          width="308px"
+          height="168px"
+          src={picture}
+          alt="decoration"
+        ></img>
         <span className={css.card__line}></span>
         <div className={css.card__picture_border} r="31"></div>
         <img alt="" class={css.card__picture_wrapper} src={user.avatar}></img>
@@ -31,7 +43,7 @@ export const UserCard = ({ user }) => {
             }
             onClick={handleToggle}
           >
-            {user.isFollowing ? "following" : "follow"}
+            {user.isFollowing ? 'following' : 'follow'}
           </button>
         </div>
       </div>

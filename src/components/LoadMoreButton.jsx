@@ -1,3 +1,10 @@
 export const LoadMoreButton = ({ onClick }) => {
-  return <button onClick={onClick}>Load more</button>;
+  return (
+    <button
+      style={{ margin: '20px auto'}}
+      onClick={onClick}
+    >
+      Load more
+    </button>
+  );
 };
