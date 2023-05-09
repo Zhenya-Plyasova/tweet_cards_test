@@ -10,7 +10,7 @@ export const Layout = () => {
       style={{ width: '100%', margin: '0 auto', padding: '0 16px' }}
     >
       <Navigation />
-      <Suspense fallback={null}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
     </div>
