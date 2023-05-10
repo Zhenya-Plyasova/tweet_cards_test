@@ -2,7 +2,7 @@
   "name": "tweet_cards_test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zhenya-Plyasova/tweet_cards_test/",
+  "homepage": "https://zhenya-plyasova.github.io/tweet_cards_test/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
