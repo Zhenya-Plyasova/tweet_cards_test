@@ -1,4 +1,4 @@
 .mainWrapper{
-    width: 100%;
-    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
 }

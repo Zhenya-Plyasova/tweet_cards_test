@@ -50,7 +50,7 @@ const Tweets = () => {
     >
       <BackLink type="button" />
       <UserList users={users} />
-      {page < 5 && <LoadMoreButton onClick={handleLoadMore} />}
+      {users.length>0 && page < 5 && <LoadMoreButton onClick={handleLoadMore} />}
     </div>
   );
 };
