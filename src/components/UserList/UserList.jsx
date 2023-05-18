@@ -11,7 +11,7 @@ export const UserList = ({ users }) => {
     return (
       <>
         {error && <p>{error}</p>}
-        {loading && <p>Loading...</p>}
+        {loading && <p style={{marginLeft: 'auto', marginRight: 'auto'}}>Loading...</p>}
         {users.length > 0 && (
           <div className={css.list__wrapper}>
             <ul className={css.card__list}>

@@ -8,14 +8,11 @@ const Home = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: '100px',
           }}
         >
-          <h1
-            style={{
-              margin: '20px auto',
-              justifyContent: 'center',
-            }}
-          >
+          <h1>
             Welcome to the Tweets APP!
           </h1>
           <img src={manyUsers} with = 'auto' height='450px' alt='net of people'></img>
